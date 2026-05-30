@@ -1,0 +1,7 @@
+[project]
+name = "colangio-carsinoma"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+[tool.vercel.scripts]
+build = "python manage.py migrate --noinput"

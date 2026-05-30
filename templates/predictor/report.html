@@ -1,0 +1,13 @@
+{% extends 'predictor/base.html' %}
+{% block title %}Report | Cholangiocarcinoma Predictor{% endblock %}
+{% block content %}
+<section class="card report-card">
+    <h1>Prediction Report</h1>
+    <p><strong>Patient:</strong> {{ result.name }}</p>
+    <p><strong>Risk Level:</strong> {{ result.risk_level|title }}</p>
+    <p><strong>Probability:</strong> {{ result.probability_percent }}%</p>
+    <p><strong>Clinical Note:</strong> {{ result.explanation }}</p>
+    <p><strong>Disclaimer:</strong> {{ disclaimer }}</p>
+    <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+</section>
+{% endblock %}

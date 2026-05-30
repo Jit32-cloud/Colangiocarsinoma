@@ -1,0 +1,51 @@
+{% extends 'predictor/base.html' %}
+{% block title %}Home | Cholangiocarcinoma Predictor{% endblock %}
+{% block content %}
+<section class="card hero">
+    <div class="hero-grid">
+        <div>
+            <span class="chip">Clinical Decision Support</span>
+            <h1>Cholangiocarcinoma Prediction Platform</h1>
+            <p>
+                Cholangiocarcinoma is a rare but serious bile duct cancer. This platform helps estimate
+                risk using symptoms, laboratory values, and major risk factors.
+            </p>
+            <div class="button-row">
+                <a class="btn" href="{% url 'predict' %}">Start Prediction</a>
+                <a class="btn secondary" href="{% url 'about' %}">Learn More</a>
+            </div>
+        </div>
+        <div class="medical-animation" aria-hidden="true">
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring delay"></div>
+            <div class="heart-core">+</div>
+            <svg class="ecg-line" viewBox="0 0 420 120" preserveAspectRatio="none">
+                <path d="M0 68 L70 68 L90 46 L112 92 L138 24 L168 80 L190 62 L230 62 L250 46 L272 88 L300 32 L330 72 L420 72"></path>
+            </svg>
+            <div class="floating-dot d1"></div>
+            <div class="floating-dot d2"></div>
+            <div class="floating-dot d3"></div>
+        </div>
+    </div>
+</section>
+
+<section class="stat-grid">
+    <article class="card stat-card">
+        <h3>Data Inputs</h3>
+        <p>18 structured clinical parameters</p>
+    </article>
+    <article class="card stat-card">
+        <h3>Risk Output</h3>
+        <p>Low, Medium, High + Probability</p>
+    </article>
+    <article class="card stat-card">
+        <h3>Pipeline</h3>
+        <p>ML-ready backend with trainable model loading</p>
+    </article>
+</section>
+
+<section class="card">
+    <h2>Medical Disclaimer</h2>
+    <p>{{ disclaimer }}</p>
+</section>
+{% endblock %}

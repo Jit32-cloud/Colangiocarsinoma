@@ -1,0 +1,25 @@
+{% extends 'predictor/base.html' %}
+{% block title %}Result | Cholangiocarcinoma Predictor{% endblock %}
+{% block content %}
+<section class="card result-card">
+    <h1>Prediction Result</h1>
+    <p><strong>Patient:</strong> {{ result.name }}</p>
+    <div class="result-indicator {{ result.risk_level }}" id="riskBadge">
+        {% if result.risk_level == 'low' %}Low Risk{% elif result.risk_level == 'medium' %}Medium Risk{% else %}High Risk{% endif %}
+    </div>
+    <p><strong>Probability:</strong> <span id="riskPercent">{{ result.probability_percent }}</span>%</p>
+    <div class="progress-track">
+        <div class="progress-fill {{ result.risk_level }}" id="riskProgress" style="width: {{ result.probability_percent }}%;"></div>
+    </div>
+    <div class="mini-chart">
+        <div class="chart-col {{ result.risk_level }}" style="height: {{ result.probability_percent }}%;"></div>
+    </div>
+    <div class="alert">
+        {{ result.explanation }}
+    </div>
+    <div class="button-row">
+        <a class="btn" href="{% url 'predict' %}">Predict Again</a>
+        <a class="btn secondary" href="{% url 'report' %}">Download PDF Report</a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF4FF"/>
+      <stop offset="1" stop-color="#D7E9FF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F3F8FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="28" fill="url(#bg)"/>
+  <circle cx="1040" cy="130" r="90" fill="#C9E0FF"/>
+  <circle cx="1120" cy="80" r="28" fill="#9BC7FF"/>
+  <rect x="75" y="90" width="620" height="520" rx="26" fill="url(#card)"/>
+  <rect x="120" y="145" width="530" height="50" rx="12" fill="#E7F1FF"/>
+  <rect x="120" y="220" width="250" height="330" rx="14" fill="#F2F8FF"/>
+  <rect x="400" y="220" width="250" height="150" rx="14" fill="#F2F8FF"/>
+  <rect x="400" y="390" width="250" height="160" rx="14" fill="#F2F8FF"/>
+  <rect x="150" y="262" width="190" height="16" rx="8" fill="#BAD7FF"/>
+  <rect x="150" y="294" width="145" height="12" rx="6" fill="#CBE1FF"/>
+  <rect x="150" y="330" width="165" height="12" rx="6" fill="#CBE1FF"/>
+  <rect x="150" y="366" width="120" height="12" rx="6" fill="#CBE1FF"/>
+  <rect x="430" y="255" width="190" height="16" rx="8" fill="#BAD7FF"/>
+  <rect x="430" y="286" width="150" height="12" rx="6" fill="#CBE1FF"/>
+  <rect x="430" y="318" width="170" height="12" rx="6" fill="#CBE1FF"/>
+  <rect x="430" y="423" width="190" height="16" rx="8" fill="#BAD7FF"/>
+  <path d="M440 510C470 460 520 470 550 520C580 570 630 560 650 520" stroke="#2C7BE5" stroke-width="8" stroke-linecap="round"/>
+  <rect x="750" y="110" width="380" height="500" rx="28" fill="#FFFFFF"/>
+  <circle cx="940" cy="210" r="90" fill="#E8F2FF"/>
+  <path d="M905 215C905 192 924 174 947 174H962V246H947C924 246 905 228 905 205V215Z" fill="#8AB8FF"/>
+  <path d="M974 174H989C1012 174 1031 193 1031 216V224C1031 247 1012 266 989 266H974V174Z" fill="#6CA7FF"/>
+  <rect x="840" y="350" width="200" height="105" rx="16" fill="#F2F8FF"/>
+  <rect x="875" y="375" width="130" height="14" rx="7" fill="#A4C9FF"/>
+  <rect x="875" y="404" width="100" height="10" rx="5" fill="#C8DFFF"/>
+  <rect x="875" y="425" width="115" height="10" rx="5" fill="#C8DFFF"/>
+  <circle cx="838" cy="520" r="45" fill="#2C7BE5"/>
+  <rect x="826" y="498" width="24" height="44" rx="5" fill="white"/>
+  <rect x="816" y="508" width="44" height="24" rx="5" fill="white"/>
+</svg>

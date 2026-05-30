@@ -1,0 +1,24 @@
+{% extends 'predictor/base.html' %}
+{% block title %}About | Cholangiocarcinoma Predictor{% endblock %}
+{% block content %}
+<section class="card">
+    <h1>About This Project</h1>
+    <p>
+        Cholangiocarcinoma is a cancer that forms in the bile ducts. Early risk awareness can
+        support timely medical evaluation.
+    </p>
+    <p>
+        This project demonstrates a full-stack Django web system with a frontend form, backend
+        validation, machine learning risk prediction integration, and result reporting.
+    </p>
+    <h3>Technology Used</h3>
+    <ul>
+        <li>Django (backend + templates)</li>
+        <li>HTML, CSS, JavaScript (frontend)</li>
+        <li>scikit-learn + joblib (ML model integration)</li>
+        <li>SQLite (data storage)</li>
+    </ul>
+    <h3>Disclaimer</h3>
+    <p>{{ disclaimer }}</p>
+</section>
+{% endblock %}

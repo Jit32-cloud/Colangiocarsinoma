@@ -1,0 +1,14 @@
+{% extends 'predictor/base.html' %}
+{% block title %}Contact | Cholangiocarcinoma Predictor{% endblock %}
+{% block content %}
+<section class="card">
+    <h1>Contact</h1>
+    <form method="post" id="contactForm">
+        {% csrf_token %}
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="6" required></textarea></label>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+</section>
+{% endblock %}

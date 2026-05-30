@@ -1,0 +1,13 @@
+{% extends 'predictor/base.html' %}
+{% block title %}Login | Cholangiocarcinoma Predictor{% endblock %}
+{% block content %}
+<section class="card">
+    <h1>Sign In</h1>
+    <form method="post" class="auth-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Sign In</button>
+    </form>
+    <p>New user? <a href="{% url 'signup' %}">Create an account</a></p>
+</section>
+{% endblock %}

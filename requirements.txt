@@ -1,0 +1,8 @@
+django
+dj-database-url
+joblib
+numpy
+pandas
+psycopg2-binary
+python-dotenv
+scikit-learn
