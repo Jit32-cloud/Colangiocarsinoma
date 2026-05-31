@@ -36,7 +36,12 @@ _allowed_hosts = os.environ.get("ALLOWED_HOSTS", "")
 if _allowed_hosts.strip():
     ALLOWED_HOSTS = [host.strip() for host in _allowed_hosts.split(",") if host.strip()]
 else:
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".vercel.app"]
+    ALLOWED_HOSTS = [
+        "localhost",
+        "127.0.0.1",
+        ".vercel.app",
+        ".onrender.com",
+    ]
 
 vercel_url = os.environ.get("VERCEL_URL")
 if vercel_url and vercel_url not in ALLOWED_HOSTS:
@@ -146,3 +151,5 @@ SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
+
+APPEND_SLASH = True
