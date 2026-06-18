@@ -1,4 +1,3 @@
-/** @jsxRuntime classic */
 const { useMemo, useState } = React;
 
 function Field({ label, children }) {
